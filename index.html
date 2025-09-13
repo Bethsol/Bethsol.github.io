@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis and Science Project Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 2.5rem;
+            color: #1f2937;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .text-accent {
+            color: #1e3a8a; /* A professional dark blue */
+        }
+        .bg-accent-100 {
+            background-color: #dbeafe; /* A light blue */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-3xl font-bold text-gray-900">Bethel Hailemichael</h1>
+            <nav class="mt-4 sm:mt-0">
+                <ul class="flex space-x-6 text-gray-600 font-medium">
+                    <li><a href="#projects" class="hover:text-gray-900 transition-colors duration-200">Projects</a></li>
+                    <li><a href="#workflow" class="hover:text-gray-900 transition-colors duration-200">Workflow</a></li>
+                    <li><a href="#skills" class="hover:text-gray-900 transition-colors duration-200">Skills</a></li>
+                    <li><a href="#contact" class="hover:text-gray-900 transition-colors duration-200">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 text-center bg-gray-100">
+        <div class="container mx-auto px-4">
+            <!-- User Icon Placeholder -->
+            <div class="rounded-full w-36 h-36 bg-gray-200 mx-auto mb-6 shadow-md flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24 text-gray-500">
+                    <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.749.894H4.502a.75.75 0 0 1-.75-.894Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+                Data Analyst & Data Scientist
+            </h2>
+            <p class="text-lg sm:text-xl text-gray-600 mt-4 max-w-2xl mx-auto">
+                Transforming raw data into actionable insights and building intelligent solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Project 1: Customer Churn Prediction -->
+                <div class="card project-card transform transition-transform duration-300">
+                    <!-- Replace with a screenshot of your project -->
+                    <img src="https://placehold.co/600x400/e0e7ff/1e3a8a?text=Model+Accuracy" alt="Infographic for Model Accuracy" class="rounded-lg mb-6 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold mb-2 text-accent">Customer Churn Prediction</h3>
+                    <p class="text-gray-600 mb-4">An end-to-end data science project predicting customer churn for a telecom company using machine learning and a web app.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-accent-100 text-accent text-sm font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                        <span class="bg-accent-100 text-accent text-sm font-medium px-2.5 py-0.5 rounded-full">scikit-learn</span>
+                        <span class="bg-accent-100 text-accent text-sm font-medium px-2.5 py-0.5 rounded-full">Streamlit</span>
+                    </div>
+                    <a href="https://github.com/Bethsol/Bethels-Projects/tree/main/Churn%20Project" class="inline-block text-accent hover:text-blue-800 font-semibold transition-colors duration-200" target="_blank">
+                        View Project &rarr;
+                    </a>
+                </div>
+
+                <!-- Project 2: Shark Tank US - Exploratory Data Analysis -->
+                <div class="card project-card transform transition-transform duration-300">
+                    <!-- Replace with a screenshot of your dashboard -->
+                    <img src="https://placehold.co/600x400/e0e7ff/1e3a8a?text=Dashboard+Insights" alt="Infographic for Dashboard Insights" class="rounded-lg mb-6 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold mb-2 text-accent">Shark Tank US - Exploratory Data Analysis</h3>
+                    <p class="text-gray-600 mb-4">A Power BI dashboard providing a comprehensive view of deal performance, investor contributions, and key trends on the show.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-accent-100 text-accent text-sm font-medium px-2.5 py-0.5 rounded-full">Power BI</span>
+                        <span class="bg-accent-100 text-accent text-sm font-medium px-2.5 py-0.5 rounded-full">DAX</span>
+                        <span class="bg-accent-100 text-accent text-sm font-medium px-2.5 py-0.5 rounded-full">Data Modeling</span>
+                    </div>
+                    <a href="https://github.com/Bethsol/Bethels-Projects/tree/main/Shark%C2%A0Tank%C2%A0US%C2%A0-Deals%C2%A0Exploratory%C2%A0Analysis" class="inline-block text-accent hover:text-blue-800 font-semibold transition-colors duration-200" target="_blank">
+                        View Project &rarr;
+                    </a>
+                </div>
+
+                <!-- Project 3: SQL Data Analysis -->
+                <div class="card project-card transform transition-transform duration-300">
+                    <!-- Replace with a screenshot of your SQL report or findings -->
+                    <img src="https://placehold.co/600x400/e0e7ff/1e3a8a?text=Database+Queries" alt="Infographic for SQL Queries" class="rounded-lg mb-6 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold mb-2 text-accent">Advanced SQL Data Analysis</h3>
+                    <p class="text-gray-600 mb-4">A project focused on using advanced SQL queries to extract, transform, and analyze data directly from a relational database.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-accent-100 text-accent text-sm font-medium px-2.5 py-0.5 rounded-full">SQL</span>
+                        <span class="bg-accent-100 text-accent text-sm font-medium px-2.5 py-0.5 rounded-full">Database Management</span>
+                    </div>
+                    <a href="#" class="inline-block text-accent hover:text-blue-800 font-semibold transition-colors duration-200">
+                        View Project &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Science Workflow Section (New) -->
+    <section id="workflow" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">My Data Science Workflow</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center text-center p-6 rounded-lg">
+                    <!-- Icon for Data Collection -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 14.5V20a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5.5M15 9l-3 3-3-3M12 11.5V2"/>
+                    </svg>
+                    <h4 class="text-xl font-semibold mt-4">1. Data Collection</h4>
+                    <p class="text-gray-600 mt-2">Gathering and acquiring relevant data from various sources.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-6 rounded-lg">
+                    <!-- Icon for Data Cleaning -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM16 11l-3 3-1-1"/>
+                    </svg>
+                    <h4 class="text-xl font-semibold mt-4">2. Data Cleaning</h4>
+                    <p class="text-gray-600 mt-2">Preprocessing data to ensure quality, consistency, and accuracy.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-6 rounded-lg">
+                    <!-- Icon for Analysis & Modeling -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 6M12 3v5h5M13 12v6m0 0l-3-3m3 3l3-3m-3-12a9 9 0 0 0 9 9m-9 0a9 9 0 0 0-9-9"/>
+                    </svg>
+                    <h4 class="text-xl font-semibold mt-4">3. Analysis & Modeling</h4>
+                    <p class="text-gray-600 mt-2">Developing machine learning models and performing in-depth analysis.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-6 rounded-lg">
+                    <!-- Icon for Visualization -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="20" x2="18" y2="10"/>
+                        <line x1="12" y1="20" x2="12" y2="4"/>
+                        <line x1="6" y1="20" x2="6" y2="14"/>
+                    </svg>
+                    <h4 class="text-xl font-semibold mt-4">4. Visualization</h4>
+                    <p class="text-gray-600 mt-2">Creating dashboards and reports to communicate findings effectively.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">My Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-center">
+                <div class="p-6 bg-gray-100 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold">Python</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold">SQL</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold">pandas</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold">scikit-learn</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold">Power BI</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold">DAX</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold">Data Modeling</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold">Git & GitHub</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold">HTML</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold">CSS</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold">JavaScript</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold">Tailwind CSS</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold">Web Design</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold">Responsive Design</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-900">Get in Touch</h2>
+            <p class="text-lg sm:text-xl text-gray-600 mb-8 max-w-xl mx-auto">
+                I'm always open to new opportunities and collaborations. Feel free to connect with me.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <a href="mailto:betisol143@gmail.com" class="bg-gray-800 text-white font-semibold py-3 px-6 rounded-full hover:bg-gray-700 transition-colors duration-200">
+                    Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/bethsol" target="_blank" class="text-gray-800 font-semibold py-3 px-6 rounded-full border border-gray-400 hover:bg-gray-200 transition-colors duration-200">
+                    Connect on LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-gray-600 py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 Bethel Hailemichael. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
