@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class="scroll-smooth"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bethel Hailemichael | Portfolio</title>
@@ -37,9 +36,11 @@
 
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center">
-            <h1 class="text-3xl font-bold text-gray-900">Portfolio</h1>
+            <a href="#" class="text-3xl font-bold text-gray-900 hover:text-accent transition-colors">Portfolio</a>
+            
             <nav class="mt-4 sm:mt-0">
                 <ul class="flex space-x-6 text-gray-600 font-medium">
+                    <li><a href="#" class="hover:text-gray-900 transition-colors">Home</a></li>
                     <li><a href="#projects" class="hover:text-gray-900 transition-colors">Projects</a></li>
                     <li><a href="#workflow" class="hover:text-gray-900 transition-colors">Workflow</a></li>
                     <li><a href="#skills" class="hover:text-gray-900 transition-colors">Skills</a></li>
@@ -49,7 +50,7 @@
         </div>
     </header>
 
-    <section class="py-20 text-center bg-gray-100">
+    <section id="home" class="py-20 text-center bg-gray-100">
         <div class="container mx-auto px-4">
             <div class="rounded-full w-36 h-36 bg-gray-200 mx-auto mb-6 shadow-md flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24 text-gray-500">
@@ -63,139 +64,13 @@
         </div>
     </section>
 
-    <section id="projects" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">Featured Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-
-                <div class="card project-card transition-all duration-300">
-                    <img src="https://placehold.co/600x400/1e3a8a/ffffff?text=DevHub+Next.js+16" alt="DevHub Project" class="rounded-lg mb-6 w-full h-48 object-cover">
-                    <h3 class="text-2xl font-semibold mb-2 text-accent">DevHub Next.js 16</h3>
-                    <p class="text-gray-600 mb-4 flex-grow">A full-stack, production-ready platform featuring App Router, Server Components, and real-time MongoDB integration.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-accent-100 text-accent text-xs font-medium px-2.5 py-0.5 rounded-full">Next.js 16</span>
-                        <span class="bg-accent-100 text-accent text-xs font-medium px-2.5 py-0.5 rounded-full">MongoDB</span>
-                        <span class="bg-accent-100 text-accent text-xs font-medium px-2.5 py-0.5 rounded-full">Tailwind</span>
-                    </div>
-                    <a href="https://github.com/Bethsol/dev-hub-nextjs16" class="inline-block text-accent hover:underline font-semibold" target="_blank">View Code &rarr;</a>
-                </div>
-
-                <div class="card project-card transition-all duration-300">
-                    <img src="https://placehold.co/600x400/065f46/ffffff?text=Stock+Verse+App" alt="Stock Verse Project" class="rounded-lg mb-6 w-full h-48 object-cover">
-                    <h3 class="text-2xl font-semibold mb-2 text-accent">Stock Verse</h3>
-                    <p class="text-gray-600 mb-4 flex-grow">A comprehensive stock portfolio management application for tracking real-time market data and investment performance.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-accent-100 text-accent text-xs font-medium px-2.5 py-0.5 rounded-full">React</span>
-                        <span class="bg-accent-100 text-accent text-xs font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
-                        <span class="bg-accent-100 text-accent text-xs font-medium px-2.5 py-0.5 rounded-full">APIs</span>
-                    </div>
-                    <a href="https://github.com/Bethsol/Stock-Verse" class="inline-block text-accent hover:underline font-semibold" target="_blank">View Code &rarr;</a>
-                </div>
-
-                <div class="card project-card transition-all duration-300">
-                    <img src="https://placehold.co/600x400/e0e7ff/1e3a8a?text=Churn+Prediction" alt="Churn Project" class="rounded-lg mb-6 w-full h-48 object-cover">
-                    <h3 class="text-2xl font-semibold mb-2 text-accent">Churn Prediction</h3>
-                    <p class="text-gray-600 mb-4 flex-grow">Machine learning model to predict telecom customer churn with an interactive Streamlit dashboard.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-accent-100 text-accent text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
-                        <span class="bg-accent-100 text-accent text-xs font-medium px-2.5 py-0.5 rounded-full">ML</span>
-                    </div>
-                    <a href="https://github.com/Bethsol/Bethels-Projects/tree/main/Churn%20Project" class="inline-block text-accent hover:underline font-semibold" target="_blank">View Project &rarr;</a>
-                </div>
-                
-                <div class="card project-card transition-all duration-300">
-                    <img src="https://placehold.co/600x400/e0e7ff/1e3a8a?text=Power+BI+Shark+Tank" alt="Shark Tank Project" class="rounded-lg mb-6 w-full h-48 object-cover">
-                    <h3 class="text-2xl font-semibold mb-2 text-accent">Shark Tank Analysis</h3>
-                    <p class="text-gray-600 mb-4 flex-grow">Exploratory Data Analysis and Power BI dashboarding of US Shark Tank deals and investor trends.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-accent-100 text-accent text-xs font-medium px-2.5 py-0.5 rounded-full">Power BI</span>
-                        <span class="bg-accent-100 text-accent text-xs font-medium px-2.5 py-0.5 rounded-full">DAX</span>
-                    </div>
-                    <a href="https://github.com/Bethsol/Bethels-Projects/tree/main/Shark%C2%A0Tank%C2%A0US%C2%A0-Deals%C2%A0Exploratory%C2%A0Analysis" class="inline-block text-accent hover:underline font-semibold" target="_blank">View Project &rarr;</a>
-                </div>
-
-                <div class="card project-card transition-all duration-300">
-                    <img src="https://placehold.co/600x400/e0e7ff/1e3a8a?text=PostgreSQL+Analysis" alt="SQL Project" class="rounded-lg mb-6 w-full h-48 object-cover">
-                    <h3 class="text-2xl font-semibold mb-2 text-accent">Netflix Data SQL</h3>
-                    <p class="text-gray-600 mb-4 flex-grow">Advanced PostgreSQL analysis focused on content trends and business logic implementation.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-accent-100 text-accent text-xs font-medium px-2.5 py-0.5 rounded-full">PostgreSQL</span>
-                        <span class="bg-accent-100 text-accent text-xs font-medium px-2.5 py-0.5 rounded-full">SQL</span>
-                    </div>
-                    <a href="https://github.com/Bethsol/Bethels-Projects/tree/main/Netflix_sql_project" class="inline-block text-accent hover:underline font-semibold" target="_blank">View Project &rarr;</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="workflow" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">Project Workflow</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm">
-                    <div class="h-12 w-12 text-accent mb-4">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.5V20a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5.5M15 9l-3 3-3-3M12 11.5V2"/></svg>
-                    </div>
-                    <h4 class="text-xl font-semibold">Requirement Analysis</h4>
-                    <p class="text-gray-600 mt-2 text-sm">Identifying business needs and technical specifications.</p>
-                </div>
-                <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm">
-                    <div class="h-12 w-12 text-accent mb-4">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM16 11l-3 3-1-1"/></svg>
-                    </div>
-                    <h4 class="text-xl font-semibold">Development/Cleaning</h4>
-                    <p class="text-gray-600 mt-2 text-sm">Building logic or preprocessing data for high accuracy.</p>
-                </div>
-                <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm">
-                    <div class="h-12 w-12 text-accent mb-4">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 6M12 3v5h5M13 12v6"/></svg>
-                    </div>
-                    <h4 class="text-xl font-semibold">Testing & QA</h4>
-                    <p class="text-gray-600 mt-2 text-sm">Rigorous testing to ensure production-ready stability.</p>
-                </div>
-                <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm">
-                    <div class="h-12 w-12 text-accent mb-4">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-                    </div>
-                    <h4 class="text-xl font-semibold">Deployment</h4>
-                    <p class="text-gray-600 mt-2 text-sm">Launching solutions on Vercel, Cloud, or Dashboards.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">Core Technical Stack</h2>
-            <div class="flex flex-wrap justify-center gap-4">
-                <div class="px-6 py-3 bg-gray-100 rounded-lg font-medium text-gray-700">Next.js 16</div>
-                <div class="px-6 py-3 bg-gray-100 rounded-lg font-medium text-gray-700">React</div>
-                <div class="px-6 py-3 bg-gray-100 rounded-lg font-medium text-gray-700">Tailwind CSS</div>
-                <div class="px-6 py-3 bg-gray-100 rounded-lg font-medium text-gray-700">JavaScript (ES6+)</div>
-                <div class="px-6 py-3 bg-gray-100 rounded-lg font-medium text-gray-700">Python (Data Science)</div>
-                <div class="px-6 py-3 bg-gray-100 rounded-lg font-medium text-gray-700">PostgreSQL</div>
-                <div class="px-6 py-3 bg-gray-100 rounded-lg font-medium text-gray-700">MongoDB</div>
-                <div class="px-6 py-3 bg-gray-100 rounded-lg font-medium text-gray-700">Power BI</div>
-                <div class="px-6 py-3 bg-gray-100 rounded-lg font-medium text-gray-700">Firebase</div>
-                <div class="px-6 py-3 bg-gray-100 rounded-lg font-medium text-gray-700">Git/GitHub</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-8">Let's Connect</h2>
-            <div class="flex flex-col sm:flex-row justify-center gap-6">
-                <a href="mailto:betisol143@gmail.com" class="bg-gray-800 text-white py-3 px-8 rounded-full hover:bg-gray-700 transition">Email Me</a>
-                <a href="https://www.linkedin.com/in/bethsol" target="_blank" class="border border-gray-400 py-3 px-8 rounded-full hover:bg-gray-200 transition">LinkedIn</a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-white text-gray-500 py-8 text-center border-t">
-        <p>&copy; 2026 Bethel Hailemichael. All rights reserved.</p>
-    </footer>
+    <div class="fixed bottom-8 right-8 z-50">
+        <a href="#" class="bg-accent text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition-all block" title="Back to Top">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+        </a>
+    </div>
 
 </body>
 </html>
